@@ -1,0 +1,8 @@
+"input": "<Create empty Git repo in specified directory>"
+"output":"<git init>"
+
+"input":"<Clone repo located at <repo> onto local machine>"
+"output": "<git clone <repo>>"
+
+"input":"<Define author name to be used for all commits in current repo>"
+"output":"<git config>"
