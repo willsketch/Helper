@@ -13,5 +13,14 @@ setup(
  license= 'MIT License',
  description='guide you with terminal and git commands',
  long_description=long_description,
- url=''
+ url='https://github.com/willsketch/Helper',
+ py_modules=['helper', 'my_helper'],
+ packages= find_packages(),
+ install_requires = [requirements],
+ include_package_data=True,
+ entry_points= {
+     'console_scripts':[
+         'helper = my_helper:cli',
+     ]
+ }
 )
