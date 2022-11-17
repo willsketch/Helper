@@ -7,7 +7,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
  name= 'helper',
- version= '0.0.1',
+ version= '0.0.3',
  author= 'william mwine',
  author_email= 'williammwine219@gmail.com',
  license= 'MIT License',
@@ -17,7 +17,13 @@ setup(
  py_modules=['helper', 'my_helper'],
  packages= find_packages(),
  install_requires = [requirements],
+ classifiers=[
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8.12',
+    ],
  include_package_data=True,
+ package_data={'helper':['examples.txt']},
  entry_points= {
      'console_scripts':[
          'helper = my_helper:cli',
