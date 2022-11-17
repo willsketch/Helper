@@ -1,15 +1,16 @@
 import openai
+import pkg_resources
 
 class Helper():
     def __init__(self, prompt=''):
         self.prompt = prompt
-        self.path = 'helper/examples.txt'
+        self.path = 'examples.txt'
         self.model = 'text-davinci-002'
         self.temperature = 0.5
 
     def fetch_examples(self):
-        with open(self.path) as f:
-            data = f.read().splitlines()
+        stream = pkg_resources.resource_stream(__name__, self.path)
+        data = stream.read().decode("utf-8").splitlines()
 
         return data
 
