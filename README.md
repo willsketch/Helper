@@ -6,6 +6,11 @@ Helper was built with openai api using the model 'davinci'
 prompt is designed with examples (to be found in examples.txt) of git commands and more will be added.
 As for the command line , argparse was used
 
+## Installation
+Helper is still on testpypi, run the command below to install it  
+```
+pip install -i https://test.pypi.org/simple/ cli-assistant
+```
 ## Usage
 To use Helper , you will need openai api key. Follow these steps to generate the api key or visit this [article](https://elephas.app/blog/how-to-create-openai-api-keys-cl5c4f21d281431po7k8fgyol0) for more details.
  * step1: signup [here](https://beta.openai.com/signup) and create an openai account
