@@ -4,6 +4,9 @@ import argparse
 from helper.main import Helper
 
 def cli():
+    """
+    this function creates the cli tool using argparse
+    """
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
     if openai.api_key is  None:
