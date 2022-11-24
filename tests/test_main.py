@@ -1,10 +1,13 @@
 import unittest
 from helper.main import Helper
+from my_helper import cli, check_api_key
+import openai
 
 class HelperTestCase(unittest.TestCase):
     """tests for helper"""
 
     def test_fetch_examples(self):
+        """this test tests the data type returned by fetch_examples"""
         data = Helper().fetch_examples()
         self.assertEqual(type(data), list)
         print("passed ")
@@ -13,6 +16,12 @@ class HelperTestCase(unittest.TestCase):
         query = Helper().make_prompt()
         self.assertEqual(type(query), str)
         print("passed")
+
+    def test_no_api_key(self):
+        openai.api_key = None
+        check_api_key()
+        self.assertEqual(check_api_key(), 'API_KEY is None')
+        print('passed')
 
 
 if __name__ == '__main__':

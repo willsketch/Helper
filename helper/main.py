@@ -16,8 +16,8 @@ class Helper():
         fetch examples to be used in designing the api
         returns the examples as a list of the examples
         """
-        stream = pkg_resources.resource_stream(__name__, self.path)
-        data = stream.read().decode("utf-8").splitlines()
+        with pkg_resources.resource_stream(__name__, self.path) as stream:
+            data = stream.read().decode("utf-8").splitlines()
 
         return data
 
