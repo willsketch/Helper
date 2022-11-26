@@ -7,7 +7,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
  name= 'cli-assistant',
- version= '0.0.6',
+ version= '0.1.1',
  author= 'william mwine',
  author_email= 'williammwine219@gmail.com',
  license= 'MIT License',
