@@ -2,10 +2,8 @@ Helper
 ------
 
 | This is a simple cli tool to help you with your linux and git commands
-| (**still in progress …**) ## About Helper Helper was built with openai
-  api using the model ‘davinci’ prompt is designed with examples (to be
-  found in examples.txt) of git commands and more will be added. As for
-  the command line , argparse was used
+| About Helper
+  Helper was built with openai api using the model ‘davinci’
 
 Usage
 -----
