@@ -1,5 +1,5 @@
 ## Helper
-This is a simple  cli tool to help you with your linux  and git commands  
+This is a simple  cli tool that incorporates chatgpt like features in your terminal 
 
 ## About Helper
 Helper was built with openai api using the model 'davinci'  
