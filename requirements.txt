@@ -1,4 +1,1 @@
 openai
-# setuptools
-# twine
-# wheel
